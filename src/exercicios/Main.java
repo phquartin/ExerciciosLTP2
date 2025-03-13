@@ -5,6 +5,7 @@ import exercicios.exercicio2.model.Produto;
 import exercicios.exercicio3.model.Calculadora;
 import exercicios.exercicio4.model.Telefone;
 import exercicios.exercicio5.controller.ContagemRegressiva;
+import exercicios.exercicio6.Aluno.Aluno;
 
 import java.util.Scanner;
 
@@ -41,6 +42,11 @@ public class Main {
                 cr.contagem(sc.nextInt());
                 break;
             case 6:
+                Aluno aluno1 = new Aluno("Pedro", 10, 9);
+                Aluno aluno2 = new Aluno("Kaio", 4, 5);
+
+                aluno1.verificarAprovacao();
+                aluno2.verificarAprovacao();
 
         }
     }
