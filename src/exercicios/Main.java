@@ -3,6 +3,7 @@ package exercicios;
 import exercicios.exercicio1.model.Pessoa;
 import exercicios.exercicio2.model.Produto;
 import exercicios.exercicio3.model.Calculadora;
+import exercicios.exercicio4.model.Telefone;
 
 import java.util.Scanner;
 
@@ -27,6 +28,11 @@ public class Main {
                 System.out.println("Multiplicacao 5 x 10: " + calculadora.multiplica(5, 10));
                 System.out.println("24 eh par? " + calculadora.parOuImpar(24));
                 System.out.println("13 eh par? " + calculadora.parOuImpar(13));
+                break;
+            case 4:
+                Telefone telefone = new Telefone("55441122", "TIM");
+                telefone.discar("1234567");
+                telefone.enviarMensagem("Java eh massa", "9011234");
                 break;
         }
     }
