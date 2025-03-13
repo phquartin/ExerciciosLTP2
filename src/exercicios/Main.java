@@ -4,6 +4,7 @@ import exercicios.exercicio1.model.Pessoa;
 import exercicios.exercicio2.model.Produto;
 import exercicios.exercicio3.model.Calculadora;
 import exercicios.exercicio4.model.Telefone;
+import exercicios.exercicio5.controller.ContagemRegressiva;
 
 import java.util.Scanner;
 
@@ -34,6 +35,13 @@ public class Main {
                 telefone.discar("1234567");
                 telefone.enviarMensagem("Java eh massa", "9011234");
                 break;
+            case 5:
+                ContagemRegressiva cr = new ContagemRegressiva();
+                System.out.print("Digite o numero: ");
+                cr.contagem(sc.nextInt());
+                break;
+            case 6:
+
         }
     }
 }
