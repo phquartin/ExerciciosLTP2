@@ -47,7 +47,7 @@ public class Main {
                 case 5:
                     ContagemRegressiva cr = new ContagemRegressiva();
                     System.out.print("Digite o numero: ");
-                    cr.contagem(sc.nextInt());
+                    cr.contagem(Integer.parseInt(sc.nextLine()));
                     break;
                 case 6:
                     Aluno aluno1 = new Aluno("Pedro", 10, 9);
