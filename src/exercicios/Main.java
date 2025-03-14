@@ -7,6 +7,7 @@ import exercicios.exercicio4.model.Telefone;
 import exercicios.exercicio5.controller.ContagemRegressiva;
 import exercicios.exercicio6.model.Aluno;
 import exercicios.exercicio7.controller.SistemaLogin;
+import exercicios.exercicio8.model.Esfera;
 
 import java.util.Scanner;
 
@@ -54,7 +55,11 @@ public class Main {
                     new SistemaLogin().login();
                     break;
                 case 8:
-
+                    Esfera esfera = new Esfera(10);
+                    System.out.println("Area = " + esfera.calcularArea() + "cm quadrados");
+                    System.out.println("Volume = " + esfera.calcularVolume() + "cm cubicos");
+                    break;
+                case 9:
             }
         }
     }
