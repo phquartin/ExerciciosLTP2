@@ -31,6 +31,7 @@ public class Main {
                     Produto produto = new Produto("Feijao", 10.99);
                     System.out.println("Nome: " + produto.getNome());
                     System.out.println("Preco: " + produto.getPreco());
+                    break;
                 case 3:
                     Calculadora calculadora = new Calculadora();
                     System.out.println("Soma 10 + 5: " + calculadora.soma(10, 5));
