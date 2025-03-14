@@ -1,6 +1,7 @@
 package exercicios;
 
 import exercicios.exercicio1.model.Pessoa;
+import exercicios.exercicio10.model.Carro;
 import exercicios.exercicio2.model.Produto;
 import exercicios.exercicio3.model.Calculadora;
 import exercicios.exercicio4.model.Telefone;
@@ -17,9 +18,11 @@ public class Main {
 
     public static void main(String[] args) {
         while (true) {
-            System.out.print("Selecione o exercicio(1-10): ");
+            System.out.print("Selecione o exercicio(1-10) ou 0 para SAIR: ");
             int exercicio = Integer.parseInt(sc.nextLine());
             switch (exercicio) {
+                case 0:
+                    return;
                 case 1:
                     Pessoa pessoa = new Pessoa("Joao", 18, 1.87);
                     pessoa.exibirDados();
@@ -64,6 +67,18 @@ public class Main {
                     new Tabuada().tabuada(6);
                     break;
                 case 10:
+                    Carro carro1 = new Carro();
+                    Carro carro2 = new Carro("Hyundai", "HB20");
+
+                    carro1.acelerar(45);
+                    carro1.acelerar(10);
+                    System.out.println("---------------------------------");
+                    carro2.acelerar(5);
+                    carro2.acelerar(15);
+                    break;
+                default:
+                    System.out.println("Exercicio invalido!");
+                    break;
             }
         }
     }
