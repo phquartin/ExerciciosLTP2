@@ -8,6 +8,7 @@ import exercicios.exercicio5.controller.ContagemRegressiva;
 import exercicios.exercicio6.model.Aluno;
 import exercicios.exercicio7.controller.SistemaLogin;
 import exercicios.exercicio8.model.Esfera;
+import exercicios.exercicio9.controller.Tabuada;
 
 import java.util.Scanner;
 
@@ -60,6 +61,9 @@ public class Main {
                     System.out.println("Volume = " + esfera.calcularVolume() + "cm cubicos");
                     break;
                 case 9:
+                    new Tabuada().tabuada(6);
+                    break;
+                case 10:
             }
         }
     }
